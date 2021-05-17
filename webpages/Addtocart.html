@@ -1,0 +1,89 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Add-to-cart</title>
+  <style>
+    .relative {
+             border: 3px solid;
+             background-color: black;
+             height: 60px;
+             
+        }
+
+        .title {
+            float: left;
+            color: white;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #211F1C;
+            height: 40px;
+        }
+
+        li {
+            float: left;
+            position: relative;
+            margin-left: 150px;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: darkcyan;
+        }
+        </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <div class="relative">
+        <img style="margin-left:15px;"src="/images/logo.PNG" alt="logo" height="55px" width="200">
+      
+        <input style="position: fixed;top:20px;left: 300px;width: 500px;height:25px;margin-left:100px;" type ="text" id="type">
+        <input type="image" src="/images/search.jpg" style="position: fixed;top: 20px;left: 800px;height: 32px;width:30px;margin-left:105px;" id="search">
+         <img style="position: fixed;top: 20px;margin-left:900px;"src="/images/myflag.png" alt="myflag" height="40" width="60"; >
+         <input type="image" id="cart" style="margin-left:1000px;position:fixed;top:20px;" src="/images/cart.jpg" alt="shopping-cart" height="45" width="55">
+     </div>
+
+ 
+     <ul>
+         <li><a class="active" href="https://RST-Final-project.rewapatil.repl.co/index.html">Home</a></li>
+         <li><a href="Sketchbooks.html">Sketchbooks</a></li>
+         <li><a href="pencilcrayons.html">Pencil crayons</a></li>
+         <li><a href="paints.html">Paints</a></li>
+         <li><a href="paintbrush.html">Paint brushes</a></li>
+   </ul>
+    <div style="float:right;margin-top:100px;margin-right:200px;border:2px solid black;padding:60px;" id="displayord">
+        <b>Credit card number -</b> <input type="text" id="creditnum">
+        <br><br>
+        <b>Billing address -</b> <input type="text" id="address">
+        <br><br>
+        <b>Credit expiration date -</b> <input type="text" 
+        id="creditexpire">
+        <br><br>
+        <button style="width:300px;background-color:yellow;font-weight:bold;"id="change-text">Pay now</button>                    
+        </div>
+        <div id="displayans" style="position:fixed;margin-top:200px;margin-left:50px;">
+        </div>
+        <div id="billnum"></div>
+        
+
+        
+        <script src="/cart-script.js"></script>
+        
+
+    
+</body>
+</html>

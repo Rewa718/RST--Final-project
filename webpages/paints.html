@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Paints webpage</title>
+    <style>
+      .relative {
+             border: 3px solid;
+             background-color: black;
+             height: 60px;
+             
+        }
+
+        .title {
+            float: left;
+            color: white;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #211F1C;
+            height: 40px;
+        }
+
+        li {
+            float: left;
+            position: relative;
+            margin-left: 150px;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: darkcyan;
+        }
+
+        .center {
+          margin-left: auto;
+          margin-right: auto;
+          text-align: center;
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <div class="relative">
+        <img style="margin-left:15px;"src="/images/logo.PNG" alt="logo" height="55px" width="200">
+      
+        <input style="position: fixed;top:20px;left: 300px;width: 500px;height:25px;margin-left:100px;" type ="text" id="type">
+        <input type="image" src="/images/search.jpg" style="position: fixed;top: 20px;left: 800px;height: 32px;width:30px;margin-left:105px;" id="search">
+         <img style="position: fixed;top: 20px;margin-left:900px;"src="/images/myflag.png" alt="myflag" height="40" width="60"; >
+         <input type="image" id="cart" style="margin-left:1000px;position:fixed;top:20px;" src="/images/cart.jpg" alt="shopping-cart" height="45" width="55">
+     </div>
+    <ul>
+         <li><a class="active" href="https://RST-Final-project.rewapatil.repl.co/index.html">Home</a></li>
+         <li><a href="Sketchbooks.html">Sketchbooks</a></li>
+         <li><a href="pencilcrayons.html">Pencil crayons</a></li>
+         <li><a href="paints.html">Paints</a></li>
+         <li><a href="paintbrush.html">Paint brushes</a></li>
+   </ul>
+   <table class="center">
+     <tr>
+       <td  class="center">
+         <div><img src="/images/paint1.jpg" alt="postercolor" height="300" width="400"><br>
+         <a href="productdetails.html?name=Poster&price=10.87">Poster colour paints</a><br>
+         <img src="/images/fivestar.png" alt="fivestar" alt="five stars" height="50" width="100">
+         <p> $10.87</p>
+         </td>
+         <td>
+
+
+         <img src="/images/paint2.jpg" alt="Liquitex" height="300" width="400"><br>
+         <a href="productdetails.html?name=Liquitex&price=15.00">Liquitex basics paint set</a><br>
+         <img src="/images/fourstar.jpg" alt="fourstar" height="50" width="100">
+         <p>$15.00</p>
+         </td>
+         </table>
+
+
+
+
+   <script src='paints-script.js'></script>
+</body>
+</html>
