@@ -10,8 +10,7 @@ switch (name) {
 
     document.getElementById('displaytext').innerHTML += '<p style="font-size:15px;font-family:Tahoma;">The perfect portable canvas for capturing sketches and drawings in the studio or on the move. This classic black Sketchbook is made using quality sketch-grade paper that supports a variety of artistic media and stands up to eraser use. Each Sketchbook becomes an archive of your art and includes essential Moleskine features such as rounded corners, a bookmark ribbon and an elastic closure to secure your drawings.<br><br> Designed for professionals and anyone with a passion for art, Moleskine Sketchbooks make space for you to observe, imagine, sketch and draw your world.</p><br>'
     document.getElementById('displaytext').innerHTML += '<a href="/webpages/Addtocart.html?name=Moleskinebook"><input type=button value="Add to cart" style="background-color:yellow;color:black;width:250px;height:35px;border-color:2px black;"></a>'
-    break 
-
+    break
   case 'Strathmore book':
     document.getElementById('displayimage').innerHTML += '<img src="/images/strathmore.jpg" alt="Sketchbooks" height="400"><br>'
     document.getElementById('displayimage').innerHTML += '<p style="font-size:20px;"><i>Strathmore Sketchbook</i></p>'
@@ -75,38 +74,29 @@ switch (name) {
     document.getElementById('displaytext').innerHTML += '<p>These brushes are used to apply paint smoothly and with texture. These resilient brushes are good as bristle brushes, allowing you to smoothly graze your paper with paint </p><br><br>'
     document.getElementById('displaytext').innerHTML += '<a href="/webpages/Addtocart.html?name=Paint1"><input type=button value="Add to cart" style="background-color:yellow;color:black;width:250px;height:35px;border-color:2px black;"></a>'
     break
-}  
- document.getElementById('search').addEventListener('click', myResults)
-
- function myResults () {
-   const research = document.getElementById('type').value
+}
+document.getElementById('search').addEventListener('click', myResults)
+function myResults() {
+  const research = document.getElementById('type').value
 
   switch (research) {
     case 'sketchbooks':
-    location.href='/webpages/Sketchbooks.html'
-    break
+      location.href = '/webpages/Sketchbooks.html'
+      break
 
     case 'pencil crayons':
-    location.href='/webpages/pencilcrayons.html'
-    break
+      location.href = '/webpages/pencilcrayons.html'
+      break
 
     case 'paints':
-    location.href='/webpages/paints.html'
-    break
-    
+      location.href = '/webpages/paints.html'
+      break
+
     case 'paint brushes':
-    location.href='/webpages/paintbrush.html'
-    break
+      location.href = '/webpages/paintbrush.html'
+      break
 
     default:
-    location.href='/index.html'
+      location.href = '/index.html'
   }
-
-
- }
-
-
-
-
-
-
+}
