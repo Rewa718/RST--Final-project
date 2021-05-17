@@ -43,45 +43,35 @@ switch (name) {
     document.getElementById('displayans').innerHTML += '<img style="position:fixed;width:50px;top:200px;left:100px;"src="/images/probrush.jpg" alt="brush2">'
     document.getElementById('displayans').innerHTML += '<p style="position:fixed;top:200px;left:170px;"> $10.87</p>'
     document.getElementById('displayans').innerHTML += '<p style="position:fixed;left:250px;top:200px;">Paint brush set</p>'
-
-
-
-
-} 
+}
 document.getElementById('change-text').addEventListener('click', text)
 
-function text () {
+function text() {
   document.getElementById('billnum').innerHTML = '<p style="font-size:20px;margin-left:200px;margin-top:400px;"><b>Your order has been confirmed. It will be delivered within five business days<b></p>'
 }
 document.getElementById('search').addEventListener('click', myResults)
 
- function myResults () {
+function myResults() {
   const research = document.getElementById('type').value
 
   switch (research) {
     case 'sketchbooks':
-    location.href='/webpages/Sketchbooks.html'
-    break
+      location.href = '/webpages/Sketchbooks.html'
+      break
 
     case 'pencil crayons':
-    location.href='/webpages/pencilcrayons.html'
-    break
+      location.href = '/webpages/pencilcrayons.html'
+      break
 
     case 'paints':
-    location.href='/webpages/paints.html'
-    break
-    
+      location.href = '/webpages/paints.html'
+      break
+
     case 'paint brushes':
-    location.href='/webpages/paintbrush.html'
-    break
+      location.href = '/webpages/paintbrush.html'
+      break
 
     default:
-    location.href='/index.html'
+      location.href = '/index.html'
   }
- }
-
-  
-
-
-
-
+}
