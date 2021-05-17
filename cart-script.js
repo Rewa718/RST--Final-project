@@ -46,12 +46,12 @@ switch (name) {
 }
 document.getElementById('change-text').addEventListener('click', text)
 
-function text() {
+function text () {
   document.getElementById('billnum').innerHTML = '<p style="font-size:20px;margin-left:200px;margin-top:400px;"><b>Your order has been confirmed. It will be delivered within five business days<b></p>'
 }
 document.getElementById('search').addEventListener('click', myResults)
 
-function myResults() {
+function myResults () {
   const research = document.getElementById('type').value
 
   switch (research) {

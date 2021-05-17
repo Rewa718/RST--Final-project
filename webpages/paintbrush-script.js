@@ -1,6 +1,6 @@
 document.getElementById('search').addEventListener('click', myResults)
 
-function myResults() {
+function myResults () {
   const research = document.getElementById('type').value
 
   switch (research) {
