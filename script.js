@@ -1,7 +1,6 @@
 // call each product strings to dynamically display on productdetails webpage
 const params = new URLSearchParams(window.location.search)
 const name = params.get('name')
-const price = params.get('price')
 // create switch case to dynamically display all product images, description, and button on a single webpage
 switch (name) {
   // create dynamic display for the Moleskine sketchbook product
@@ -79,11 +78,11 @@ switch (name) {
     document.getElementById('displaytext').innerHTML += '<a href="/webpages/Addtocart.html?name=Paint1"><input type=button value="Add to cart" style="background-color:yellow;color:black;width:250px;height:35px;border-color:2px black;"></a>'
     break
 }
-//connect "search" button with "myResults" function
+// connect "search" button with "myResults" function
 document.getElementById('search').addEventListener('click', myResults)
-function myResults() {
+function myResults () {
   const research = document.getElementById('type').value
-  //create switch cases for every possible search bar results
+  // create switch cases for every possible search bar results
   switch (research) {
     // create cases for webpages to load as per user's search bar results
     case 'sketchbooks':

@@ -47,13 +47,13 @@ switch (name) {
 // connect "paynow" button to "text" function
 document.getElementById('paynow').addEventListener('click', text)
 // when user enters payment information in the provided textboxes and clicks the button, create a function to display order confirmation message
-function text() {
+function text () {
   document.getElementById('billnum').innerHTML = '<p style="font-size:20px;margin-left:200px;margin-top:400px;"><b>Your order has been confirmed. It will be delivered within five business days<b></p>'
 }
 // connect "search" button with "myResults" function
 document.getElementById('search').addEventListener('click', myResults)
 
-function myResults() {
+function myResults () {
   const research = document.getElementById('type').value
   // create switch cases for every possible search bar results
 

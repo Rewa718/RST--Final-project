@@ -2,7 +2,7 @@
 // connect "search" button with "myResults" function
 document.getElementById('search').addEventListener('click', myResults)
 
-function myResults() {
+function myResults () {
   const research = document.getElementById('type').value
   // create switch cases for every possible search bar results
   switch (research) {
