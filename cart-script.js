@@ -1,7 +1,6 @@
-//call each product's strings to dynamically display each product in the user's cart
+// call each product's strings to dynamically display each product in the user's cart
 const params = new URLSearchParams(window.location.search)
 const name = params.get('name')
-const price = params.get('price')
 // create a switch case to dynamically display the products placed in cart
 switch (name) {
   case 'Moleskinebook':
@@ -45,18 +44,18 @@ switch (name) {
     document.getElementById('displayans').innerHTML += '<p style="position:fixed;top:200px;left:170px;"> $10.87</p>'
     document.getElementById('displayans').innerHTML += '<p style="position:fixed;left:250px;top:200px;">Paint brush set</p>'
 }
-//connect "paynow" button to "text" function
+// connect "paynow" button to "text" function
 document.getElementById('paynow').addEventListener('click', text)
-//when user enters payment information in the provided textboxes and clicks the button, create a function to display order confirmation message
-function text () {
+// when user enters payment information in the provided textboxes and clicks the button, create a function to display order confirmation message
+function text() {
   document.getElementById('billnum').innerHTML = '<p style="font-size:20px;margin-left:200px;margin-top:400px;"><b>Your order has been confirmed. It will be delivered within five business days<b></p>'
 }
-//connect "search" button with "myResults" function
+// connect "search" button with "myResults" function
 document.getElementById('search').addEventListener('click', myResults)
 
-function myResults () {
+function myResults() {
   const research = document.getElementById('type').value
-  //create switch cases for every possible search bar results
+  // create switch cases for every possible search bar results
 
   switch (research) {
     case 'sketchbooks':
@@ -74,7 +73,7 @@ function myResults () {
     case 'paint brushes':
       location.href = '/webpages/paintbrush.html'
       break
-//create case for home page to load if user searches randomly, and not according to program
+    // create case for home page to load if user searches randomly, and not according to program
     default:
       location.href = '/index.html'
   }
